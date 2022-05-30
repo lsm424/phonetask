@@ -1,3 +1,8 @@
-[INFO] 2022-05-30 14:16:12,022 - websocket_client.py[line:97] : 合力 建立webscoket连接
-[INFO] 2022-05-30 14:16:12,138 - websocket_client.py[line:113] : 合力 登录成功
-[WARNING] 2022-05-30 14:16:16,901 - websocket_client.py[line:106] : 合力 和服务器断开连接
+[INFO] 2022-05-30 14:37:22,884 - websocket_client.py[line:97] : 合力 建立webscoket连接
+[INFO] 2022-05-30 14:37:23,026 - websocket_client.py[line:113] : 合力 登录成功
+[INFO] 2022-05-30 14:37:28,064 - client.py[line:38] : 收到预约请求: {'data': {'phone': '13885142645', 'shop_code': '1009', 'token': '50BC5CB08AF78A2F9BF42D1F558FFBE4'}, 'reboot_fly': True}
+[INFO] 2022-05-30 14:37:28,440 - client.py[line:44] : 响应：{'code': 0, 'message': '报名成功', 'token': '50BC5CB08AF78A2F9BF42D1F558FFBE4', 'ipAddr': '113.108.77.63', 'phone': '13885142645'}
+[WARNING] 2022-05-30 14:37:29,445 - websocket_client.py[line:106] : 合力 和服务器断开连接
+[WARNING] 2022-05-30 14:37:29,445 - websocket_client.py[line:106] : 合力 和服务器断开连接
+[INFO] 2022-05-30 14:37:30,180 - websocket_client.py[line:97] : 合力 建立webscoket连接
+[INFO] 2022-05-30 14:37:30,316 - websocket_client.py[line:113] : 合力 登录成功

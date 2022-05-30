@@ -83,3 +83,27 @@ class Heli:
         except BaseException as e:
             logger.error(f'save s12 sign 失败，{e}')
             return None
+
+    # 查看预约结果
+    def get_s12_member_sign(self, token):
+        url = 'https://spec.helichaoshi.com/getS12MemberSign'
+        headers = {
+            'Accept': 'application/json;charset=UTF-8;',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Cookie': f'JSESSIONID={token}',
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E217 MicroMessenger/6.8.0(0x16080000) NetType/WIFI Language/en Branch/Br_trunk MiniProgramEnv/Mac',
+            'Referer': 'https://servicewechat.com/wx06a6a21a08010030/84/page-frame.html',
+            'Accept-Language': 'zh-cn',
+        }
+        try:
+            r = self.s.post(url, headers=headers, verify=False, proxies=proxy)
+            r.raise_for_status()
+            if r.text == '':
+                return {}
+            r = r.json()
+            return r
+        except BaseException as e:
+            logger.error(f'get s12 member sign 失败，{e}')
+            return None
