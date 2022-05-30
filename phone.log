@@ -1,0 +1,3 @@
+[INFO] 2022-05-30 14:16:12,022 - websocket_client.py[line:97] : 合力 建立webscoket连接
+[INFO] 2022-05-30 14:16:12,138 - websocket_client.py[line:113] : 合力 登录成功
+[WARNING] 2022-05-30 14:16:16,901 - websocket_client.py[line:106] : 合力 和服务器断开连接
